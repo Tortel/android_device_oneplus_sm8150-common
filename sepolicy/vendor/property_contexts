@@ -1,6 +1,11 @@
+# Audio
+persist.vendor.audio.hac.enable    u:object_r:vendor_audio_prop:s0
+
 # Camera
 vendor.camera.        u:object_r:vendor_camera_prop:s0
 camera.OPpictureId    u:object_r:vendor_camera_prop:s0
+
+ro.camera.            u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
 persist.vendor.sys.fp    u:object_r:vendor_fingerprint_prop:s0
@@ -11,6 +16,17 @@ persist.vendor.sys.memplus.    u:object_r:vendor_memplus_prop:s0
 
 # NFC
 ro.vendor.nfc.notify_tp    u:object_r:vendor_nfc_prop:s0
+vendor.oem.nfc.            u:object_r:vendor_nfc_prop:s0
+persist.vendor.oem.nfc.    u:object_r:vendor_nfc_prop:s0
+persist.vendor.nfc.        u:object_r:vendor_nfc_prop:s0
+
+# RIL
+vendor.oem.device.imeicache1    u:object_r:radio_prop:s0
+vendor.oem.device.imeicache2    u:object_r:radio_prop:s0
+vendor.oem.bt.addr              u:object_r:radio_prop:s0
+
+ro.build.flavor                 u:object_r:radio_prop:s0
+ro.ril.supportLTE               u:object_r:radio_prop:s0
 
 # RF version
 ro.boot.rf_version    u:object_r:exported_default_prop:s0
@@ -23,3 +39,9 @@ persist.vendor.sensors.enable.mag_filter         u:object_r:vendor_sensors_prop:
 persist.vendor.sensors.light.location_x          u:object_r:vendor_sensors_prop:s0
 persist.vendor.sensors.light.location_y          u:object_r:vendor_sensors_prop:s0
 persist.vendor.sensors.proximity.using_motion    u:object_r:vendor_sensors_prop:s0
+ro.boot.ftm_mode                                 u:object_r:vendor_sensors_prop:s0
+#ro.boot.rf_version                               u:object_r:vendor_sensors_prop:s0
+
+# Various Props
+ro.boot.prmec                  u:object_r:exported_default_prop:s0
+persist.vendor.color.matrix    u:object_r:exported_default_prop:s0

@@ -6,3 +6,5 @@ allow init { op1_file op2_file }:dir mounton;
 
 # Allow to contextmount op1_file
 allow op1_file self:filesystem associate;
+
+allow init socket_device:sock_file { create setattr };
